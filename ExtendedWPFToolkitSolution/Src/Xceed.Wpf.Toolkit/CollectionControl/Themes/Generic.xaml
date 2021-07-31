@@ -51,17 +51,6 @@
   </Style>
 
   <Style TargetType="{x:Type local:CollectionControl}">
-    <Style.Resources>
-      <Style TargetType="ListBox">
-        <Setter Property="ItemTemplate">
-          <Setter.Value>
-            <DataTemplate>
-              <TextBlock Text="{Binding Converter={StaticResource ObjectTypeToNameConverter}}" />
-            </DataTemplate>
-          </Setter.Value>
-        </Setter>
-      </Style>
-    </Style.Resources>
     <Setter Property="Template">
       <Setter.Value>
         <ControlTemplate TargetType="{x:Type local:CollectionControl}">
